@@ -124,10 +124,14 @@ porque si el usuario pica la palabra lo relaciona con el campo q debe selecciona
       $burgerButton.addEventListener('touchstart',toggleMenu);
         function toggleMenu(){
         $menu.classList.toggle('active')
-      };
-      function toggleMenu(){
-      $menu.classList.toggle('active')
-      };
+        };
+        function showMenu(){
+        $menu.classList.add('active');
+        };
+        function hideMenu(){
+        $menu.classList.remove('active');
+        };
+
       // $menu.classList.add('active')
 
   // Cargar las imagenes con Lazyblazy
@@ -139,8 +143,8 @@ porque si el usuario pica la palabra lo relaciona con el campo q debe selecciona
 
       var $body = document.body;
       var gestos = new Hammer($body);
-      gestos.on('swipeleft', toggleMenu);
-      gestos.on('swiperigth', toggleMenu);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperigth', showMenu);
     </script>
   </body>
 </html>
