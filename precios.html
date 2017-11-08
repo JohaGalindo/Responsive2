@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/invie.css"
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Precios de tu mejores guitarras</title>
+  </head>
+  <body>
+    <header id="header" class="header background">
+        <div class="contenedor">
+            <figure class="logotipo">
+              <img src="images/invie.png" width="186" height="60" alt="Invie logo"/>
+            </figure>
+            <span class="burger_button icon-menu" id="burger-button"></span>
+            <nav class="menu" id="menu">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <l  i>
+                  <a href="index.html#guitarras">Guitarras</a>
+                </li>
+                <li>
+                  <a href="precios.html">Precios</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    </header>
+<!-- Las tablas tienen un encabezado thead y un cuerpo tbody , para agregar fila dentro de una tabla es
+<tr> las Th son las celdas para cabeceras-->
+    <section class="tabla">
+      <div class="contenedor">
+      <table>
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripcion</th>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inviclasic</td>
+            <td>100.000</td>
+            <td>Guitarrapro</td>
+            <td>Inviclasic</td>
+            <td>100.000</td>
+            <td>Guitarrapro</td>
+          </tr>
+          <tr>
+            <td>Inviclasic</td>
+            <td>100.000</td>
+            <td>Guitarrapro</td>
+            <td>Inviclasic</td>
+            <td>100.000</td>
+            <td>Guitarrapro</td>
+          </tr>
+          <tr>
+            <td>Inviclasic</td>
+            <td>100.000</td>
+            <td>Guitarrapro</td>
+            <td>Inviclasic</td>
+            <td>100.000</td>
+            <td>Guitarrapro</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="Logotipo invie">
+          <a href="tel:+3045229910"><strong>Teléfono</strong> <span>3045229910</span></a>
+          <a href="mailto:invie@gmail.com"><strong>email</strong> <span>invie@gmail.com</span></a>
+        </div>
+        <form class="formulario">
+        <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required placeholder="Tu nombre" id="nombre" name="nombre" />
+            <label for="Email">E-mail</label>
+            <input type="email" required id="Email" name="email"/>
+            <div class="sexo">
+                <label for="mujer">
+                  <input type="radio" id="mujer" checked name="sexo" value="Mujer"> Mujer
+                </label>
+                <label for="hombre">
+                  <input type="radio" id="hombre" name="sexo" value="Hombre"> Hombre
+                </label>
+            </div>
+            <div class="intereses">
+                <label for="cotizacion">
+                  <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
+                </label>
+                <label for="reclamos">
+                  <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                </label>
+                <label for="comentarios">
+                  <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+                </label>
+                <label for="otros">
+                  <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+                </label>
+          </div>
+        </div>
+        <div class="col2">
+              <label for="mensaje">Comentarios</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+              <input type="submit" value="Enviar" class="boton_productos"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+      var $burgerButton = document.getElementById('burger-button');
+      var $menu = document.getElementById('menu');
+      $burgerButton.addEventListener('touchstart',toggleMenu);
+        function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+      // $menu.classList.add('active')
+
+  // Cargar las imagenes con Lazyblazy
+      var bLazy = new Blazy({
+        selector:'img'
+
+});
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,37 @@
+/*Selectores: Forma de como invocar o hacer referencia a las etiquetas html y darles una personalizacion unica con css */
+/* El asterisco (*) le da estilos a toda la página*/
+* {
+  border: 1px solid red;
+  margin: 10px;
+  }
+/* Selector por etiqueta, solo se agrega el nombre de la etiqueta y agrega css*/
+header {
+  background: red;
+}
+section {
+  background:pink;
+}
+/*selector descendente: La base de css, para que funcione en cascada un elemento dentro de otro*/
+article h3{
+  color: green;
+}
+/*selector de clase: necesitan una sintaxis particular en html para ser referenciados*/
+.tittle-a{
+  background-color: green;
+
+}
+.tittle-b{
+  background-color: blue;
+}
+/*selector de id: tienen que ser tambien referenciadas de una forma unica */
+#header{
+  border: 3px solid black;
+
+}
+#portada{
+    border: 3px solid orange;
+}
+#guitarras{
+  border: 3px solid brown;
+
+}
